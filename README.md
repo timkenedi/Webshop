@@ -3,7 +3,9 @@
 Del 1: Diskutera verksamhet och krav
 
 Diskutera nedanstående punkter i gruppen och skriv ihop ett dokument med vad ni kommer fram till.
+
 Vad erbjuder kunden?
+
 Bestäm vad det är för typ av produkt som er kund vill sälja i sin webbshop. Säljer de till exempel egengjorda
 smycken, sportutrustning, märkeskläder eller något annat?
 Ta även fram en kort beskrivning av kundens verksamhet och de varor de säljer.
