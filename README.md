@@ -16,6 +16,8 @@ att få en fungerande och så bra slutprodukt som möjligt.
 
 
 
+
+
 Del 2: Bygga webbshopen
 Vad ska finnas med?
 Nedan finns kundens krav och önskemål.
