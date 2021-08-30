@@ -19,14 +19,20 @@ att få en fungerande och så bra slutprodukt som möjligt.
 Del 2: Bygga webbshopen
 Vad ska finnas med?
 Nedan finns kundens krav och önskemål.
+
 • Information om företaget och dess verksamhet behöver finnas med i webbshopen.
+
 • Presentation av vilka varor som säljs. Den information som behöver finnas med för varje vara är
 produktens namn, pris samt en bild av produkten.
+
 • Användaren ska kunna välja vilken eller vilka varor den vill beställa.
+
 • När användaren valt varor måste ett formulär fyllas i innan beställningen kan bekräftas. I formuläret
 ska användaren fylla i förnamn, efternamn och mailadress.
+
 • När beställningen är bekräftad ska användaren få information om sin order. Där ska användarens
 personuppgifter, valda varor samt slutsumman för de valda produkterna finnas med.
+
 • Kunden har ett stående erbjudande i webbshopen: Köper användaren 3st varor får de 50% rabatt på
 den billigaste varan. Köper användaren 6st varor får de 50% rabatt på de två billigaste varorna osv.
 Kunden önskar också att webbshopen ska vara tilltalande och användarvänlig, att all information som
