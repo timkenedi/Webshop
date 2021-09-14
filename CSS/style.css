@@ -26,6 +26,8 @@ nav{
 	z-index: 100;
 }
 
+
+
 .navigation{
 	display: flex;
 	justify-content: space-between;
@@ -36,7 +38,7 @@ nav{
 
 .logo img{
 	height: 100px;
-	width: 80%;
+
 
 }
 
@@ -137,6 +139,50 @@ nav{
 }
 
 }
+
+.container{
+
+	background: white;
+	width: 85%;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	position: absolute; left: 20px; top: 100px;
+}
+#content {
+	background: white;
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+	position: absolute;
+
+
+}
+
+.product {
+	width: 80%;
+	margin: 20px auto;
+	border: 1px solid black;
+	border-radius: 10px;
+
+
+	padding: 10px;
+
+}
+
+.productInfo {
+	display: inline-block;
+}
+
+img {
+	width: 100px;
+	height: 70%;
+}
+
+h3 {
+	margin: 10px;
+
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
