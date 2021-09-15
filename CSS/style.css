@@ -65,6 +65,7 @@ nav{
 	margin 0px 10px;
 	font-size: 1.4rem;
 	color: rgba(0, 0, 0, 0.7);
+	margin-right: 0.3rem;
 }
 
 .menu a:hover,
@@ -101,11 +102,11 @@ nav{
 
 .search-bar{
 	width: 100%;
-	height: 300px;
-	background-color: #ffffff;
-	position: fixed;
+	height: 60px;
+	background-color: #fff;
+	position: relative;
 	left: 0px;
-	bottom: 0px;
+	top: 50px;
 	display: flex;
 	justify-content: center;
 	box-shadow: 2px -5px 30px rgba(0, 0, 0, 0.1);
@@ -118,8 +119,8 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100px;
-	margin-top: 20px;
+	height: 50px;
+	margin-top: 5px;
 }
 
 .search-bar input{
@@ -181,7 +182,45 @@ img {
 
 h3 {
 	margin: 10px;
+}
 
+/* Footer container */
+.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: #ffffff;
+		color: #555555;
+		align-items: center;
+	}
+
+/* Footer container */
+.columnFooter{
+float: left;
+width: 25%;
+padding: 10px;
+margin-bottom: 10px;
+background-color: #fff;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media scree and(max-width: 600px) {
+	.columnFooter{
+		width: 100%;
+	}
+}
+
+/* Footer - compresses the line spacing */
+.oppet{
+	margin-bottom: -20px;
+}
 
 /* Slideshow container */
 .slideshow-container {
