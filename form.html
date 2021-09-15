@@ -3,61 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>Submit your information</title>
-
     	<link rel="stylesheet" type="text/css" href="css/formStyle.css">
+      <script type="text/javascript" href="script.js"></script>
   </head>
   <body>
 
     <div class="formOrder">
-      <h2>Kundinformation</h2>
+      <h1>Kundinformation</h1>
       <hr>
       <br>
 
       <div class="container">
         <div class="formInformation">
-          <form action="result.html" method="post" id='information'>
-            <h3>Leverans:</h3>
+          <form action="orderConfirmed.html" method="post" id='information'>
+            <h2>Leverans:</h2>
 
           	<label for="fname">Förnamn: </label><br>
-          	<input type="text" id="fname" name="fname" maxlength="30" required size="28px" ><br>
+          	<input type="text" id="fname" name="fname" maxlength="30" required size="28px" ><br><br>
 
           	<label for="lname">Efternamn: </label><br>
-          	<input type="text" id="lname" name="lname" maxlength="30" required size="28px"><br>
+          	<input type="text" id="lname" name="lname" maxlength="30" required size="28px"><br><br>
 
           	<label for="adress">Adress: </label><br>
-          	<input type="text" id="adress" name="adress" required size="28px"><br>
+          	<input type="text" id="adress" name="adress" required size="28px"><br><br>
 
           	<label for="mail">Mail: </label><br>
-          	<input type="email" id="mail" name="mail" required size="28px"><br>
+          	<input type="email" id="email" name="email" required size="28px"><br><br>
 
             <label for="phone">Telefonnummer: </label><br>
-            <input type="tel" id="phone" name="phone" required size="28px"><br><br>
+            <input type="tel" id="phone" name="phone" required size="28px"><br><br><br>
 
           </form>
         </div>
 
         <div class="formPayment">
-          <form action="result.html" method="post" id='payment'>
-            <h3>Payment:</h3>
+          <form action="orderConfirmed.html" method="post" id='payment'>
+            <h2>Payment:</h2>
 
             <input type="radio" id="card" name="payment" value="card">
-            <label for="card"></label>Betala med Kort<br>
+            <label for="card">Betala med Kort</label><br><br>
 
             <input type="radio" id="swish" name="payment" value="swish">
-            <label for="swish"></label>Betala med swish<br>
+            <label for="swish">Betala med swish</label><br><br>
 
             <input type="radio" id="paypal" name="payment" value="paypal">
-            <label for="paypal"></label>Betala med paypal<br>
+            <label for="paypal">Betala med paypal</label><br><br><br>
+
+            <input type="submit" value="Betala">
+        		<input type="reset" value="Avbryt">
+
+
 
           </form>
         </div>
       </div>
-
-
-
-    		<input type="submit" value="Betala">
-    		<input type="reset" value="Avbryt">
-
     </div>
+
   </body>
 </html>
