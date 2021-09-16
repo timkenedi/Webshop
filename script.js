@@ -1,12 +1,13 @@
-function Product(name, price, img) {
+function Product(name, price, img, bye) {
 	this.name = name,
 	this.price = price,
-	this.img = img
+	this.img = img,
+	this.bye = bye
 }
 
-let product1 = new Product('Air Max 90', '1299kr', 'images/airmax.JPG');
-let product2 = new Product('Air Force 1', '1150kr', 'images/airforce.JPG');
-let product3 = new Product('Jordan 1985', '30000kr', 'images/jordan.JPG')
+let product1 = new Product('Air Max 90', '1299kr', 'images/airmax.JPG', 'Lägg till');
+let product2 = new Product('Air Force 1', '1150kr', 'images/airforce.JPG', 'Lägg till');
+let product3 = new Product('Jordan 1985', '30000kr', 'images/jordan.JPG', 'Lägg till')
 
 
 let products = [product1, product2, product3];
@@ -23,6 +24,7 @@ function createElement(product) {
 							<div class="productInfo">
 								<h3> ${product.name}</h3>
 								<h3> ${product.price}</h3>
+								<button>${product.bye}</button>
 							</div>`;
 
 	return newElement;
