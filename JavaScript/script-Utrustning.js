@@ -8,6 +8,7 @@ function Product(brand, name, price, img, bye, info) {
 
 }
 
+<<<<<<< HEAD
 let product1 = new Product('GAIAM', 'Grey Hamsa Yoga Mat 4mm', '299 :-', 'images/utrustning/yogaMatta.jpg', 'Lägg till', 'info');
 let product2 = new Product('GARMIN', 'Vivoactive 4 S', '3249 :-', 'images/utrustning/pulsklocka.jpg', 'Lägg till', 'info');
 let product3 = new Product('ABILICA', 'Door Gym', '499 :-', 'images/utrustning/doorGym.jpg', 'Lägg till', 'info');
@@ -19,6 +20,16 @@ let product7 = new Product('IRON GYM', 'Fixed Hex Dumbbell 4kg Pair', '299 :-', 
 
 
 let products = [product1, product2, product3, product4, product5, product6, product7];
+=======
+let product1 = new Product('Hörlurar', '1149kr', 'images/utrustning/utrustning1.jpg', 'Lägg till', 'info');
+let product2 = new Product('Hantel 3kg', '249kr', 'images/utrustning/utrustning2.jpg', 'Lägg till', 'info');
+let product3 = new Product('Gummiband', '49kr', 'images/utrustning/utrustning3.jpg', 'Lägg till', 'info');
+let product4 = new Product('Vikter', '449kr', 'images/utrustning/utrustning4.jpg', 'Lägg till', 'info');
+
+
+
+let products = [product1, product2, product3, product4];
+>>>>>>> Mikael
 
 for (let i = 0; i < products.length; i++) {
 	let newElement = createElement(products[i]);
@@ -33,8 +44,8 @@ function createElement(product) {
 								<h3> ${product.brand}</h3>
 								<h3> ${product.name}</h3>
 								<h3> ${product.price}</h3>
-								<button>${product.bye}</button>
-								<button>${product.info}</button>
+								<button class="productInfoButton"> ${product.bye}</button>
+								<button class="productInfoButton"> ${product.info}</button>
 							</div>`;
 
 	return newElement;

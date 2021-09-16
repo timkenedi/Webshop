@@ -8,6 +8,7 @@ function Product(brand, name, price, img, bye, info) {
 
 }
 
+<<<<<<< HEAD
 let product1 = new Product('Goodlife', '15 x Goodlife, 50 gr', '159 :-', 'images/tillskott/goodlife.jpg', 'Lägg till', 'info');
 let product2 = new Product('NOCCO - No Carbs Company', '´24 x NOCCO BCAA, 330 ml', '429 :-', 'images/tillskott/nocco.jpg', 'Lägg till', 'info');
 let product3 = new Product('Star Nutrition', 'Peanut Butter, 1 kg', '89 :-', 'images/tillskott/peanutButter.jpg', 'Lägg till', 'info');
@@ -17,6 +18,20 @@ let product5 = new Product('Star Nutrition', 'Beta-alanine, 320 g', '149 :-', 'i
 
 
 let products = [product1, product2, product3, product4, product5];
+=======
+let product1 = new Product('Omega3', '49kr', 'images/tillskott/coffein.jpg', 'Lägg till', 'info');
+let product2 = new Product('Omega3', '49kr', 'images/tillskott/tillskott1.jpg', 'Lägg till', 'info');
+let product3 = new Product('Omega3', '49kr', 'images/tillskott/tillskott2.jpg', 'Lägg till', 'info');
+let product4 = new Product('Omega3', '49kr', 'images/tillskott/tillskott3.jpg', 'Lägg till', 'info');
+let product5 = new Product('Omega3', '49kr', 'images/tillskott/tillskott4.jpg', 'Lägg till', 'info');
+let product6 = new Product('Omega3', '49kr', 'images/tillskott/tillskott5.jpg', 'Lägg till', 'info');
+let product7 = new Product('Omega3', '49kr', 'images/tillskott/tillskott6.jpg', 'Lägg till', 'info');
+let product8 = new Product('Omega3', '49kr', 'images/tillskott/tillskott7.jpg', 'Lägg till', 'info');
+
+
+
+let products = [product1, product2, product3, product4, product5, product6, product7, product8];
+>>>>>>> Mikael
 
 for (let i = 0; i < products.length; i++) {
 	let newElement = createElement(products[i]);
@@ -31,8 +46,8 @@ function createElement(product) {
 								<h3> ${product.brand}</h3>
 								<h3> ${product.name}</h3>
 								<h3> ${product.price}</h3>
-								<button>${product.bye}</button>
-								<button>${product.info}</button>
+								<button class="productInfoButton"> ${product.bye}</button>
+								<button class="productInfoButton"> ${product.info}</button>
 							</div>`;
 
 	return newElement;
