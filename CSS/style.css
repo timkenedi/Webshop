@@ -163,10 +163,9 @@ nav{
 .product {
 	width: 80%;
 	margin: 20px auto;
-	border: 1px solid black;
+	border: 1px solid lightgray;
 	border-radius: 10px;
-
-
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 	padding: 10px;
 
 }
@@ -177,6 +176,7 @@ nav{
 
 .productInfoButton {
 	margin: 10px;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
 }
 
 img {
