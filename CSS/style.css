@@ -8,7 +8,6 @@ body{
 
 *{
 	box-sizing: border-box;
-
 }
 
 ul{
@@ -33,13 +32,10 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 	padding: 0px 45px;
-
 }
 
 .logo img{
 	height: 100px;
-
-
 }
 
 .menu{
@@ -52,13 +48,10 @@ nav{
 	display: flex;
 	text-transform: uppercase;
 	font-weight: 500;
-
-
 }
 
 .menu li a{
 	color: #555555;
-
 }
 
 .right-menu a{
@@ -81,8 +74,8 @@ nav{
 	position: absolute;
 	padding-top: 6px;
 	padding-left: 2px;
-
 }
+
 .num-cart-product{
 	position: absolute;
 	top: -12px;
@@ -97,7 +90,6 @@ nav{
 	justify-content: center;
 	align-items: center;
 	font-weight: 400;
-
 }
 
 .search-bar{
@@ -139,10 +131,7 @@ nav{
 	padding-right: 40px;
 }
 
-}
-
 .container{
-
 	background: white;
 	width: 85%;
 	display: flex;
@@ -150,14 +139,13 @@ nav{
 	margin: auto;
 	position: absolute; left: 20px; top: 100px;
 }
+
 #content {
 	background: white;
 	width: 100%;
 	margin: auto;
 	padding: 10px;
 	position: absolute;
-
-
 }
 
 .product {
@@ -167,7 +155,6 @@ nav{
 	border-radius: 10px;
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 	padding: 10px;
-
 }
 
 .productInfo {
@@ -277,7 +264,6 @@ background-color: #fff;
 .slideshow-dots{
 	 text-align: center;
 	 margin: -40px;
-
 }
 
 .active {
