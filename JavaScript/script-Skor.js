@@ -7,9 +7,9 @@ function Product(name, price, img, bye, info) {
 
 }
 
-let product1 = new Product('Air Max 90', '1299kr', 'images/airmax.JPG', 'Lägg till', 'info');
-let product2 = new Product('Air Force 1', '1150kr', 'images/airforce.JPG', 'Lägg till', 'info');
-let product3 = new Product('Jordan 1985', '30000kr', 'images/jordan.JPG', 'Lägg till', 'info')
+let product1 = new Product('Air Max 90', '1299kr', 'images/skor/airmax.JPG', 'Lägg till', 'info');
+let product2 = new Product('Air Force 1', '1150kr', 'images/skor/airforce.JPG', 'Lägg till', 'info');
+let product3 = new Product('Jordan 1985', '30000kr', 'images/skor/jordan.JPG', 'Lägg till', 'info')
 
 
 let products = [product1, product2, product3];
