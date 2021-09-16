@@ -7,7 +7,9 @@ function Product(name, price, img, bye, info) {
 
 }
 
-let product1 = new Product('', '', '', '', '');
+let product1 = new Product('Omega3', '49kr', 'images/tillskott/coffein.jpg', 'Lägg till', 'info');
+let product2 = new Product('Omega3', '49kr', 'images/tillskott/coffein.jpg', 'Lägg till', 'info');
+let product3 = new Product('Omega3', '49kr', 'images/tillskott/coffein.jpg', 'Lägg till', 'info');
 
 
 
