@@ -23,7 +23,6 @@ let product11 = new Product('IRON GYM', 'Fixed Hex Dumbbell 4kg Pair', '299 :-',
 
 let products = [product1, product2, product3, product4, product5, product6, product7, product8, product9, product10, product11];
 
-
 for (let i = 0; i < products.length; i++) {
 	let newElement = createElement(products[i]);
 	appendElementToHTML(newElement);
