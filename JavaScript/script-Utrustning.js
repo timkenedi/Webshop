@@ -8,10 +8,10 @@ function Product(brand, name, price, img, bye, info) {
 
 }
 
-let product1 = new Product('Hörlurar', '1149kr', 'images/utrustning/utrustning1.jpg', 'Lägg till', 'info');
-let product2 = new Product('Hantel 3kg', '249kr', 'images/utrustning/utrustning2.jpg', 'Lägg till', 'info');
-let product3 = new Product('Gummiband', '49kr', 'images/utrustning/utrustning3.jpg', 'Lägg till', 'info');
-let product4 = new Product('Vikter', '449kr', 'images/utrustning/utrustning4.jpg', 'Lägg till', 'info');
+let product1 = new Product('GAIAM', 'Hörlurar', '1149kr', 'images/utrustning/utrustning1.jpg', 'Lägg till', 'info');
+let product2 = new Product('GAIAM', 'Hantel 3kg', '249kr', 'images/utrustning/utrustning2.jpg', 'Lägg till', 'info');
+let product3 = new Product('GAIAM', 'Gummiband', '49kr', 'images/utrustning/utrustning3.jpg', 'Lägg till', 'info');
+let product4 = new Product('GAIAM', 'Vikter', '449kr', 'images/utrustning/utrustning4.jpg', 'Lägg till', 'info');
 let product5 = new Product('GAIAM', 'Grey Hamsa Yoga Mat 4mm', '299 :-', 'images/utrustning/yogaMatta.jpg', 'Lägg till', 'info');
 let product6 = new Product('GARMIN', 'Vivoactive 4 S', '3249 :-', 'images/utrustning/pulsklocka.jpg', 'Lägg till', 'info');
 let product7 = new Product('ABILICA', 'Door Gym', '499 :-', 'images/utrustning/doorGym.jpg', 'Lägg till', 'info');
