@@ -31,8 +31,8 @@ function createElement(product) {
 								<h3> ${product.brand}</h3>
 								<h3> ${product.name}</h3>
 								<h3> ${product.price}</h3>
-								<button>${product.bye}</button>
-								<button>${product.info}</button>
+								<button class="productInfoButton"> ${product.bye}</button>
+								<button class="productInfoButton"> ${product.info}</button>
 							</div>`;
 
 	return newElement;
