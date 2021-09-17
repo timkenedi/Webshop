@@ -38,20 +38,23 @@ nav{
 
 .logo img{
 	height: 100px;
+	width: 200px;
 
 
 }
 
 .menu{
 	display: flex;
+
 }
 
 .menu li{
 	position: relative;
-	margin: 20px;
+	margin: 30px;
 	display: flex;
 	text-transform: uppercase;
 	font-weight: 500;
+	
 
 
 }
@@ -158,10 +161,10 @@ nav{
 }
 
 .product {
-	width: 80%;
-	margin: 20px auto;
+	width: 75%;
+	margin: 10px auto;
 	border: 1px solid black;
-	border-radius: 10px;
+	border-radius: 3px;
 
 
 	padding: 10px;
