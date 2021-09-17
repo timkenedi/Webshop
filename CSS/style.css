@@ -207,7 +207,7 @@ background-color: #fff;
   clear: both;
 }
 
-@media scree and(max-width: 600px) {
+@media screen and(max-width: 600px) {
 	.columnFooter{
 		width: 100%;
 	}
