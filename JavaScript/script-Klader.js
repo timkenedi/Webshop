@@ -49,8 +49,12 @@ function appendElementToHTML(element) {
 
 // Funktion som ändrar lägg till symbolen vid klick.
 function addToCart() {
-   var element = document.getElementById("icon");
+   let element = document.getElementById("icon");
    element.classList.remove("fa-cart-arrow-down");
    element.classList.add("fa-check");
 	 document.getElementById("icon").style.color = "green";
+
+	 let x = 1;
+	 element = document.getElementById("numberInCart").innerHTML = x;
+
 }
