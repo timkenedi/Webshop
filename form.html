@@ -13,51 +13,30 @@
       <hr>
       <br>
 
-      <div class="container">
-        <div class="formInformation">
-          <form action="orderConfirmed.html" method="post" id='information'>
-            <h2>Leverans:</h2>
+      <div class="formInformation">
+        <form action="orderConfirmed.html" method="post" id='information'>
+          <h2>Uppgifter:</h2>
 
-          	<label for="fname">Förnamn: </label><br>
-          	<input type="text" id="fname" name="fname" maxlength="30" required size="28px" ><br><br>
+        	<label for="fname">Förnamn: </label><br>
+        	<input type="text" id="fname" name="fname" maxlength="30" required size="60px" ><br><br>
 
-          	<label for="lname">Efternamn: </label><br>
-          	<input type="text" id="lname" name="lname" maxlength="30" required size="28px"><br><br>
+          <label for="lname">Efternamn: </label><br>
+        	<input type="text" id="lname" name="lname" maxlength="30" required size="60px"><br><br>
 
-          	<label for="adress">Adress: </label><br>
-          	<input type="text" id="adress" name="adress" required size="28px"><br><br>
+        	<label for="adress">Adress: </label><br>
+        	<input type="text" id="adress" name="adress" required size="60px"><br><br>
 
-          	<label for="mail">Mail: </label><br>
-          	<input type="email" id="email" name="email" required size="28px"><br><br>
+        	<label for="mail">Mail: </label><br>
+        	<input type="email" id="email" name="email" required size="60px"><br><br>
 
-            <label for="phone">Telefonnummer: </label><br>
-            <input type="tel" id="phone" name="phone" required size="28px"><br><br><br>
+          <label for="phone">Telefonnummer: </label><br>
+          <input type="tel" id="phone" name="phone" required size="60px"><br><br><br>
 
-          </form>
-        </div>
+          <input type="submit" value="Bekräfta">
+          <input type="reset" value="Avbryt">
 
-        <div class="formPayment">
-          <form action="orderConfirmed.html" method="post" id='payment'>
-            <h2>Payment:</h2>
-
-            <input type="radio" id="card" name="payment" value="card">
-            <label for="card">Betala med Kort</label><br><br>
-
-            <input type="radio" id="swish" name="payment" value="swish">
-            <label for="swish">Betala med swish</label><br><br>
-
-            <input type="radio" id="paypal" name="payment" value="paypal">
-            <label for="paypal">Betala med paypal</label><br><br><br>
-
-            <input type="submit" value="Betala">
-        		<input type="reset" value="Avbryt">
-
-
-
-          </form>
-        </div>
+        </form>
       </div>
     </div>
-
   </body>
 </html>

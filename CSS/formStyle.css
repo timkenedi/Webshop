@@ -3,20 +3,12 @@
 	width: auto;
 	padding: 20px 30px;
 	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 30px;
+	margin-right: 30px;
 	width: 500px;
 	background: #f2f2f2;
 	border-radius: 5px;
 	font-size: 15px;
-}
-
-.container{
-	display: flex;
-}
-
-.formInformation{
-	padding-right: 60px;
 }
 
 input[type=text]{
@@ -45,9 +37,9 @@ input[type=tel]{
 
 input[type=submit]{
   background: white;
-  padding: 10px 15px;
+  padding: 10px 20px;
   margin-right: 20px;
-  font-size: 18px;
+  font-size: 22px;
   border:2px solid #196619;
   border-radius: 4px;
 	color: #196619;
@@ -56,10 +48,11 @@ input[type=submit]{
 input[type=submit]:hover{
   background: #85e085;
 }
+
 input[type=reset]{
   background: white;
-  padding: 10px 15px;
-  font-size: 18px;
+  padding: 10px 20px;
+  font-size: 22px;
   border:2px solid #800000;
   border-radius: 4px;
 	color: #800000;
@@ -70,7 +63,7 @@ input[type=reset]:hover{
 }
 
 label{
-	font-size: 18px;
+	font-size: 20px;
 }
 
 @media screen and(max width: 590px){
