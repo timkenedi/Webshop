@@ -35,7 +35,7 @@ function createElement(product) {
 								<h3> ${product.brand}</h3>
 								<h3> ${product.name}</h3>
 								<h3> ${product.price}</h3>
-								<button class="productInfoButton"> ${product.bye}</button>
+								<button class="productInfoButton" onclick="addToCart()"> <i class="fa fa-cart-arrow-down" id="icon"></i> ${product.bye}</button>
 								<button class="productInfoButton"> ${product.info}</button>
 							</div>`;
 
@@ -45,4 +45,12 @@ function createElement(product) {
 function appendElementToHTML(element) {
 	let content = document.getElementById('content');
 	content.appendChild(element);
+}
+
+// Funktion som ändrar lägg till symbolen vid klick.
+function addToCart() {
+   var element = document.getElementById("icon");
+   element.classList.remove("fa-cart-arrow-down");
+   element.classList.add("fa-check");
+	 document.getElementById("icon").style.color = "green";
 }
