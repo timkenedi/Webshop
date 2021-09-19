@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <title>Submit your information</title>
     	<link rel="stylesheet" type="text/css" href="css/formStyle.css">
-      <script type="text/javascript" href="script.js"></script>
+      <script type="text/javascript" src="JavaScript/script-Form.js" defer></script>
   </head>
   <body>
 
-    <div class="formOrder">
+    <div class="container">
       <h1>Kundinformation</h1>
       <hr>
       <br>
 
       <div class="formInformation">
-        <form action="orderConfirmed.html" method="post" id='information'>
+        <form role='form' onsubmit="getInfo(event);">
           <h2>Uppgifter:</h2>
 
         	<label for="fname">Förnamn: </label><br>
@@ -26,7 +26,7 @@
         	<label for="adress">Adress: </label><br>
         	<input type="text" id="adress" name="adress" required size="60px"><br><br>
 
-        	<label for="mail">Mail: </label><br>
+        	<label for="email">Mail: </label><br>
         	<input type="email" id="email" name="email" required size="60px"><br><br>
 
           <label for="phone">Telefonnummer: </label><br>
@@ -36,7 +36,16 @@
           <input type="reset" value="Avbryt">
 
         </form>
+
+
       </div>
     </div>
+
+    <div class="displayData">
+      <br><br><br>
+      <h2>BEKRÄFTELSE UPPGIFTER:</h2>
+      <div id='output'></div>
+    </div>
+
   </body>
 </html>
