@@ -55,6 +55,6 @@ function addToCart() {
 	 document.getElementById("icon").style.color = "green";
 
 	 let x = 1;
-	 element = document.getElementById("numberInCart").innerHTML = x;
+	 element = document.getElementById("numberInCart").innerHTML = x++;
 
 }
