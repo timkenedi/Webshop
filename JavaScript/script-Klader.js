@@ -35,7 +35,7 @@ function createElement(product) {
 								<h3> ${product.brand}</h3>
 								<h3> ${product.name}</h3>
 								<h3> ${product.price}</h3>
-								<button class="productInfoButton" onclick="addToCart()"> <i class="fa fa-cart-arrow-down" id="icon"></i> ${product.bye}</button>
+								<button class="productInfoButton" onclick="addToCart(); clickCounter()"> <i class="fa fa-cart-arrow-down" id="icon"></i> ${product.bye}</button>
 								<button class="productInfoButton"> ${product.info}</button>
 							</div>`;
 
@@ -54,7 +54,18 @@ function addToCart() {
    element.classList.add("fa-check");
 	 document.getElementById("icon").style.color = "green";
 
-	 let x = 1;
-	 element = document.getElementById("numberInCart").innerHTML = x++;
+//	 let x = 1;
+//	 element = document.getElementById("numberInCart").innerHTML = x++;
+}
 
+
+function clickCounter() {
+  if(typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("numberInCart").innerHTML = sessionStorage.clickcount;
+  }
 }
