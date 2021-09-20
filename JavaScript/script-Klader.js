@@ -35,7 +35,7 @@ function createElement(product) {
 								<h3> ${product.brand}</h3>
 								<h3> ${product.name}</h3>
 								<h3> ${product.price}</h3>
-								<button class="productInfoButton" onclick="addToCart(); clickCounter()"> <i class="fa fa-cart-arrow-down" id="icon"></i> ${product.bye}</button>
+								<button class="productInfoButton" onclick="changeColor(); clickCounter()"> <i class="fa fa-cart-arrow-down" id="icon"></i> ${product.bye}</button>
 								<button class="productInfoButton"> ${product.info}</button>
 							</div>`;
 
@@ -48,7 +48,8 @@ function appendElementToHTML(element) {
 }
 
 // Funktion som ändrar lägg till symbolen vid klick.
-function addToCart() {
+
+function changeColor() {
    let element = document.getElementById("icon");
    element.classList.remove("fa-cart-arrow-down");
    element.classList.add("fa-check");
@@ -57,7 +58,6 @@ function addToCart() {
 //	 let x = 1;
 //	 element = document.getElementById("numberInCart").innerHTML = x++;
 }
-
 
 function clickCounter() {
   if(typeof(Storage) !== "undefined") {
