@@ -180,6 +180,18 @@ h4{
 	margin: 10px;
 }
 
+h5 {
+	margin: 10px;
+	text-decoration: line-through;
+	font-size: 16px;
+}
+
+h6 {
+	margin: 10px;
+	font-size: 16px;
+	color: red;
+}
+
 /* Footer container */
 .footer {
 		position: fixed;
