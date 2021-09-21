@@ -8,15 +8,10 @@ const getInfo = e => {
   }
   localStorage.setItem('formData', JSON.stringify(formData));
   displayData();
+  ClearFields();
   e.preventDefault();
 }
 
-function changeVisibility(){
-  var x = document.getElementById("container");
-  var y = document.getElementById("displayData");
-  x.style.display = "none";
-  y.style.display = "block";
-}
 
 function displayData(){
   if(localStorage.getItem('formData')){
@@ -26,27 +21,35 @@ function displayData(){
       <table>
         <body>
           <tr>
-            <td>Förnamn:</td>
+            <td>Förnamn:\xa0\xa0</td>
             <td>${fname}</td>
           </tr>
           <tr>
-            <td>Efternamn:</td>
+            <td>Efternamn:\xa0\xa0</td>
             <td>${lname}</td>
           </tr>
           <tr>
-            <td>Adress:</td>
+            <td>Adress:\xa0\xa0</td>
             <td>${adress}</td>
           </tr>
           <tr>
-            <td>Email:</td>
+            <td>Email:\xa0\xa0</td>
             <td>${email}</td>
           </tr>
           <tr>
-            <td>Telefonnummer:</td>
+            <td>Telefonnummer:\xa0\xa0</td>
             <td>${phone}</td>
           </tr>
         </body>
       </table>
     `
   }
+}
+
+function ClearFields() {
+     document.getElementById("fname").value = "";
+     document.getElementById("lname").value = "";
+     document.getElementById("adress").value = "";
+     document.getElementById("email").value = "";
+     document.getElementById("phone").value = "";
 }
