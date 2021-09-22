@@ -8,7 +8,6 @@ body{
 
 *{
 	box-sizing: border-box;
-
 }
 
 ul{
@@ -33,39 +32,30 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 	padding: 0px 45px;
-
 }
 
 .logo img{
 	height: 100px;
-	width: 200px;
-
-
 }
 
 .menu{
 	display: flex;
-
 }
 
 .menu li{
 	position: relative;
-	margin: 30px;
+	margin: 20px;
 	display: flex;
 	text-transform: uppercase;
 	font-weight: 500;
-	
-
-
 }
 
 .menu li a{
 	color: #555555;
-
 }
 
 .right-menu a{
-	margin 0px 10px;
+	margin 0px 0px;
 	font-size: 1.4rem;
 	color: rgba(0, 0, 0, 0.7);
 }
@@ -83,32 +73,17 @@ nav{
 	position: absolute;
 	padding-top: 6px;
 	padding-left: 2px;
-
 }
-.num-cart-product{
-	position: absolute;
-	top: -12px;
-	right: -17px;
-	width: 25px;
-	height: 25px;
-	font-size: 0.8rem;
-	border-radius: 50%;
-	background-color: #0b9d8a;
-	color: #ffffff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: 400;
 
-}
+
 
 .search-bar{
 	width: 100%;
-	height: 300px;
-	background-color: #ffffff;
-	position: fixed;
+	height: 60px;
+	background-color: #fff;
+	position: relative;
 	left: 0px;
-	bottom: 0px;
+	top: 50px;
 	display: flex;
 	justify-content: center;
 	box-shadow: 2px -5px 30px rgba(0, 0, 0, 0.1);
@@ -121,8 +96,8 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100px;
-	margin-top: 20px;
+	height: 50px;
+	margin-top: 5px;
 }
 
 .search-bar input{
@@ -142,7 +117,6 @@ nav{
 }
 
 .container{
-
 	background: white;
 	width: 85%;
 	display: flex;
@@ -150,29 +124,32 @@ nav{
 	margin: auto;
 	position: absolute; left: 20px; top: 100px;
 }
+
 #content {
 	background: white;
 	width: 100%;
 	margin: auto;
 	padding: 10px;
 	position: absolute;
-
-
+	padding-bottom: 140px;
 }
 
 .product {
-	width: 75%;
-	margin: 10px auto;
-	border: 1px solid black;
-	border-radius: 3px;
-
-
+	width: 80%;
+	margin: 20px auto;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 	padding: 10px;
-
 }
 
 .productInfo {
 	display: inline-block;
+}
+
+.productInfoButton {
+	margin: 10px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
 img {
@@ -182,4 +159,122 @@ img {
 
 h3 {
 	margin: 10px;
+}
+
+h4{
+	margin: 10px;
+}
+
+/* Footer container */
+.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: #ffffff;
+		color: #555555;
+		align-items: center;
+	}
+
+/* Footer container */
+.columnFooter{
+float: left;
+width: 25%;
+padding: 10px;
+margin-bottom: 10px;
+background-color: #fff;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and(max-width: 600px) {
+	.columnFooter{
+		width: 100%;
+	}
+}
+
+/* Footer - compresses the line spacing */
+.oppet{
+	margin-bottom: -20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.textSlide {
+  color: #f2f2f2;
+  font-size: 1rem;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #d7d7d7;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* The dots/bullets/indicators */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.slideshow-dots{
+	 text-align: center;
+	 margin: -40px;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }

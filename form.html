@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Submit your information</title>
+    	<link rel="stylesheet" type="text/css" href="css/formStyle.css">
+      <script type="text/javascript" src="JavaScript/script-Form.js" defer></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Kundinformation</h1>
+      <hr>
+      <br>
+
+      <div class="formInformation">
+        <form action="bekraftelseUppgifter.html" onsubmit="getInfo(event);">
+
+          <h2>Uppgifter:</h2>
+
+        	<label for="fname">Förnamn: </label><br>
+        	<input type="text" id="fname" name="fname" maxlength="30" required size="57px" ><br><br>
+
+          <label for="lname">Efternamn: </label><br>
+        	<input type="text" id="lname" name="lname" maxlength="30" required size="57px"><br><br>
+
+        	<label for="adress">Adress: </label><br>
+        	<input type="text" id="adress" name="adress" required size="57px"><br><br>
+
+        	<label for="email">Mail: </label><br>
+        	<input type="email" id="email" name="email" required size="57px"><br><br>
+
+          <label for="phone">Telefonnummer: </label><br>
+          <input type="number" id="phone" name="phone" required size="57px"><br><br><br>
+          <!-- "onclick="createData() " -->
+          <input type="submit"  value="Bekräfta">
+          <input type="reset" onclick="window.location.href='index.html'" value="Avbryt">
+
+        </form>
+
+
+      </div>
+    </div>
+
+  </body>
+</html>
