@@ -20,8 +20,8 @@ function createData(){
       <table>
         <body>
           <tr>
-            <td>BEKRÄFTELSE KUNDUPPGIFTER:
-            </td>
+            <caption>BEKRÄFTELSE KUNDUPPGIFTER:
+            </caption>
           </tr>
           <tr>
             <td>
