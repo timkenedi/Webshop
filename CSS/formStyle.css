@@ -75,11 +75,6 @@ label{
 }
 
 .displayData{
-	padding: 10px 60px;
-	width: 500px;
-}
-
-table{
+	padding: 15px;
 	font-size: 20px;
-	font-weight: bold;
 }

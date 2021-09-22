@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -14,7 +15,8 @@
       <br>
 
       <div class="formInformation">
-        <form role='form' onsubmit="getInfo(event);">
+        <form action="bekraftelseUppgifter.html" onsubmit="getInfo(event);">
+
           <h2>Uppgifter:</h2>
 
         	<label for="fname">Förnamn: </label><br>
@@ -31,7 +33,7 @@
 
           <label for="phone">Telefonnummer: </label><br>
           <input type="number" id="phone" name="phone" required size="57px"><br><br><br>
-
+          <!-- "onclick="createData() " -->
           <input type="submit"  value="Bekräfta">
           <input type="reset" onclick="window.location.href='index.html'" value="Avbryt">
 
@@ -39,12 +41,6 @@
 
 
       </div>
-    </div>
-
-    <div class="displayData">
-      <br><br><br>
-      <h2>BEKRÄFTELSE UPPGIFTER:</h2>
-      <div id='output'></div>
     </div>
 
   </body>

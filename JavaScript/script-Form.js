@@ -6,20 +6,35 @@ const getInfo = e => {
     email: document.getElementById('email').value,
     phone: document.getElementById('phone').value
   }
-  localStorage.setItem('formData', JSON.stringify(formData));
-  displayData();
-  ClearFields();
+  sessionStorage.setItem('formData', JSON.stringify(formData));
+  createData();
   e.preventDefault();
 }
 
 
-function displayData(){
-  if(localStorage.getItem('formData')){
-    let {fname, lname, adress, email, phone} = JSON.parse(localStorage.getItem('formData'));
-    var output = document.getElementById('output');
+function createData(){
+  if(sessionStorage.getItem('formData')){
+    let {fname, lname, adress, email, phone} = JSON.parse(sessionStorage.getItem('formData'));
+    let output = document.getElementById('output');
     output.innerHTML = `
       <table>
         <body>
+          <tr>
+            <td>BEKRÄFTELSE KUNDUPPGIFTER:
+            </td>
+          </tr>
+          <tr>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            </td>
+          </tr>
           <tr>
             <td>Förnamn:\xa0\xa0</td>
             <td>${fname}</td>
@@ -44,12 +59,4 @@ function displayData(){
       </table>
     `
   }
-}
-
-function ClearFields() {
-     document.getElementById("fname").value = "";
-     document.getElementById("lname").value = "";
-     document.getElementById("adress").value = "";
-     document.getElementById("email").value = "";
-     document.getElementById("phone").value = "";
 }
